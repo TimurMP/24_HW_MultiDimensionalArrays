@@ -8,8 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MatrixTest {
 
-    int[][] matrix1 = { { 1, 2, 3 } }; // 1x3
-    int[][] matrix2 = { { 1 }, { 2 }, { 3 } };// 3x1
+    int[][] matrix1 = {{1, 2, 3}}; // 1x3
+    int[][] matrix2 = {{1}, {2}, {3}};// 3x1
+    int[][] matrix3 = {{1, 2, 3}, {3, 2, 1}, {2, 1, 3}};// 3x3
 
     @Test
     void testSum() {
@@ -24,14 +25,13 @@ class MatrixTest {
 
     @Test
     void testMultiply() {
-        int[][] expected = { { 14 } };
+        int[][] expected = {{14}};
         assertArrayEquals(expected, Matrix.multiply(matrix1, matrix2));
-        int[][] arr1 = { { 1, 2, 3 }, { 4, 5, 6 } };
-        int[][] arr2 = { { 1, 4 }, { 2, 5 }, { 3, 6 } };
-        int[][] arrExpected = { { 14, 32 }, { 32, 77 } };
+        int[][] arr1 = {{1, 2, 3}, {4, 5, 6}};
+        int[][] arr2 = {{1, 4}, {2, 5}, {3, 6}};
+        int[][] arrExpected = {{14, 32}, {32, 77}};
         assertArrayEquals(arrExpected, Matrix.multiply(arr1, arr2));
     }
-
 
 
 }
