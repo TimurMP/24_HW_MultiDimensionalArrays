@@ -52,17 +52,28 @@ public class Matrix {
                 rowsMatrix2++;
             }
         }
-        System.out.println("M1");
-        System.out.println(columnsMatrix1);
-        System.out.println(rowsMatrix1/columnsMatrix1);
-        System.out.println("M2");
-        System.out.println(columnsMatrix2);
-        System.out.println(rowsMatrix2/columnsMatrix2);
+//        System.out.println("M1");
+//        System.out.println(columnsMatrix1);
+//        System.out.println(rowsMatrix1/columnsMatrix1);
+//        System.out.println("M2");
+//        System.out.println(columnsMatrix2);
+//        System.out.println(rowsMatrix2/columnsMatrix2);
 
-        if (rowsMatrix1/columnsMatrix1 != rowsMatrix2){
+        if (rowsMatrix1/columnsMatrix1 != columnsMatrix2){
             return null;
         }
         int[][] arr = new int[columnsMatrix1][rowsMatrix2/columnsMatrix2];
+        int temp = 0;
+        for (int i = 0; i < matrix1.length; i++) {
+            for (int j = 0; j < matrix1[i].length; j++) {
+                temp += matrix1[i][j] * matrix2[j][i];
+
+            }
+
+            System.out.println(temp);
+            temp = 0;
+        }
+        System.out.println(temp);
 
 
 
