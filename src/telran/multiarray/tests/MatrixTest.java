@@ -16,6 +16,7 @@ class MatrixTest {
     void testSum() {
         assertEquals(6, Matrix.sum(matrix1));
         assertEquals(6, Matrix.sum(matrix2));
+        assertEquals(18, Matrix.sum(matrix3));
     }
 
     @Test

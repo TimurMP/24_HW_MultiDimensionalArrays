@@ -1,13 +1,20 @@
 package telran.multiarray.tools;
 
 public class Matrix {
-    public static int sum(int[][] matrix){
+    public static int sum(int[][] matrix) {
+        int total = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                total += matrix[i][j];
+            }
+        }
+        System.out.println(total);
+        return total;
 
-        return 0;
     }
 
 
-    public static int[][] transp(int [][] matrix){
+    public static int[][] transp(int[][] matrix) {
         return null;
     }
 
