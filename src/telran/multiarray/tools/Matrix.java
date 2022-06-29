@@ -9,7 +9,6 @@ public class Matrix {
             }
         }
         return total;
-
     }
 
 
@@ -22,7 +21,6 @@ public class Matrix {
                 rows++;
             }
         }
-
         int[][] arr = new int[rows / columns][columns];
 
         for (int i = 0; i < matrix.length; i++) {
@@ -65,7 +63,6 @@ public class Matrix {
                 for (int j = 0; j < matrix1[i].length; j++) {
                     temp += matrix1[i][j] * matrix2[j][k];
                 }
-
                 arr[i][k] = temp;
                 temp = 0;
 
