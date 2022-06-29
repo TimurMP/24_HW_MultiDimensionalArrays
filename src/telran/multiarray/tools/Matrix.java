@@ -69,11 +69,15 @@ public class Matrix {
                 temp += matrix1[i][j] * matrix2[j][i];
 
             }
+            for (int j = 0; j < matrix1[i].length; j++) {
+                temp += matrix1[i][j] * matrix2[j][i];
+
+            }
+
 
             System.out.println(temp);
             temp = 0;
         }
-        System.out.println(temp);
 
 
 
