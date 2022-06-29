@@ -35,12 +35,12 @@ class MatrixTest {
     @Test
     void testMultiply() {
         Matrix.multiply(matrix4, matrix4Ex);
-//        int[][] expected = {{14}};
-//        assertArrayEquals(expected, Matrix.multiply(matrix1, matrix2));
-//        int[][] arr1 = {{1, 2, 3}, {4, 5, 6}};
-//        int[][] arr2 = {{1, 4}, {2, 5}, {3, 6}};
-//        int[][] arrExpected = {{14, 32}, {32, 77}};
-//        assertArrayEquals(arrExpected, Matrix.multiply(arr1, arr2));
+        int[][] expected = {{14}};
+        assertArrayEquals(expected, Matrix.multiply(matrix1, matrix2));
+        int[][] arr1 = {{1, 2, 3}, {4, 5, 6}};
+        int[][] arr2 = {{1, 4}, {2, 5}, {3, 6}};
+        int[][] arrExpected = {{14, 32}, {32, 77}};
+        assertArrayEquals(arrExpected, Matrix.multiply(arr1, arr2));
     }
 
 

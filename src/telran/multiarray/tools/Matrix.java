@@ -58,30 +58,38 @@ public class Matrix {
 //        System.out.println("M2");
 //        System.out.println(columnsMatrix2);
 //        System.out.println(rowsMatrix2/columnsMatrix2);
+        int counter = 0;
 
-        if (rowsMatrix1/columnsMatrix1 != columnsMatrix2){
+        if (rowsMatrix1 / columnsMatrix1 != columnsMatrix2) {
             return null;
         }
-        int[][] arr = new int[columnsMatrix1][rowsMatrix2/columnsMatrix2];
+        int[][] arr = new int[columnsMatrix1][rowsMatrix2 / columnsMatrix2];
         int temp = 0;
+
         for (int i = 0; i < matrix1.length; i++) {
-            for (int j = 0; j < matrix1[i].length; j++) {
-                temp += matrix1[i][j] * matrix2[j][i];
+            for (int k = 0; k < matrix2[i].length; k++) {
+
+                for (int j = 0; j < matrix1[i].length; j++) {
+                    temp += matrix1[i][j] * matrix2[j][k];
+                }
+
+                System.out.println(temp);
+                arr[i][k] = temp;
+                temp = 0;
 
             }
-            for (int j = 0; j < matrix1[i].length; j++) {
-                temp += matrix1[i][j] * matrix2[j][i];
-
             }
 
-
-            System.out.println(temp);
-            temp = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + "\t");
+            }
+            System.out.println();
         }
+        System.out.println("---------------");
 
 
-
-        return null;
+        return arr;
 
 
     }
