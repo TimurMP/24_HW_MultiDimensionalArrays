@@ -11,10 +11,10 @@ class MatrixTest {
     int[][] matrix1 = {{1, 2, 3}}; // 1x3
     int[][] matrix2 = {{1}, {2}, {3}};// 3x1
     int[][] matrix3 = {{1, 2, 3}, {3, 2, 1}, {2, 1, 3}};// 3x3
-    int[][] matrix3Ex = {{1,3,2}, {2,2,1}, {3,1,3}};// 3x3
+    int[][] matrix3Ex = {{1, 3, 2}, {2, 2, 1}, {3, 1, 3}};// 3x3
 
     int[][] matrix4 = {{1, 2, 3}, {4, 5, 6}};// 2x3
-    int[][] matrix4Ex = {{1, 4}, {2,5}, {3,6}};// 2x3
+    int[][] matrix4Ex = {{1, 4}, {2, 5}, {3, 6}};// 2x3
 
     @Test
     void testSum() {

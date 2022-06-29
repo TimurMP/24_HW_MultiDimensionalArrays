@@ -8,7 +8,6 @@ public class Matrix {
                 total += matrix[i][j];
             }
         }
-        System.out.println(total);
         return total;
 
     }
@@ -52,14 +51,8 @@ public class Matrix {
                 rowsMatrix2++;
             }
         }
-//        System.out.println("M1");
-//        System.out.println(columnsMatrix1);
-//        System.out.println(rowsMatrix1/columnsMatrix1);
-//        System.out.println("M2");
-//        System.out.println(columnsMatrix2);
-//        System.out.println(rowsMatrix2/columnsMatrix2);
-        int counter = 0;
 
+        int counter = 0;
         if (rowsMatrix1 / columnsMatrix1 != columnsMatrix2) {
             return null;
         }
@@ -73,12 +66,11 @@ public class Matrix {
                     temp += matrix1[i][j] * matrix2[j][k];
                 }
 
-                System.out.println(temp);
                 arr[i][k] = temp;
                 temp = 0;
 
             }
-            }
+        }
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
@@ -88,9 +80,6 @@ public class Matrix {
         }
         System.out.println("---------------");
 
-
         return arr;
-
-
     }
 }
